@@ -3,22 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <title>Google Search</title>
+        <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="./style/stylesheet.css">
     </head>
     <body>
         <div class="container">
-            <div class="image-search">
+            <div class="links">
                 <a href="image.html">Google Image</a>
+                &nbsp;<a href="advance.html">Advance Search</a>
             </div>
-            <div class="advance">
-                <a href="advance.html">Advance Search</a>
-            </div>
-            <div class="logo">
+            <div class="logoimg">
                 <img class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
             </div>
             <div class="bar">
-                <span><img src="https://www.freeiconspng.com/uploads/search-icon-png-6.png" alt="Svg Icon Search"></span>
-                <input type="text" name="q" class="search-bar">
+                <form action="https://www.google.com/search" method="get" class="search-form">
+                    <i class="fa fa-search icon"></i> 
+                    <input type="text" name="q"><br>
+                </form>
+            </div>
+            <div class="buttons">
+                <form>
+                    <button type="submit" class="search">Google Search</button>
+                </form>
             </div>
         </div>
     </body>
